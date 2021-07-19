@@ -6,7 +6,6 @@ import Weapons from './pages/Weapons';
 import Sprays from './pages/Sprays';
 import Buddies from './pages/Buddies';
 import Cards from './pages/Cards';
-import AppsIcon from '@material-ui/icons/Apps';
 import ReactGA from 'react-ga';
 
 const TRACKING_ID = "G-RPRKTXR9BH";

@@ -110,12 +110,12 @@ export default function Layout({pageTitle, children}) {
 	const handleDrawerClose = () => {
 		setOpen(false);
 	};
-	const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
 	return (
 		<div className={classes.root}>
 			<title>{pageTitle}</title>
 			<CssBaseline />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 			<AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
 				<Toolbar className={classes.toolbar}>
 					<IconButton
@@ -128,6 +128,7 @@ export default function Layout({pageTitle, children}) {
 						<MenuIcon />
 					</IconButton>
 					<Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>Valorant Wiki</Typography>
+					<a className="github-fork-ribbon" href="https://github.com/ZeusMode/valorant-wiki" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 				</Toolbar>
 			</AppBar>
 			<Drawer

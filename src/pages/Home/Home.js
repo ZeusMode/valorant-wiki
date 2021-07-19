@@ -2,12 +2,6 @@ import React from 'react'
 import Layout from '../../components/layout'
 import Typography from '@material-ui/core/Typography'
 
-const styles = {
-    paperContainer: {
-        backgroundImage: `url(${Image})`
-    }
-};
-
 export default class Home extends React.Component{
 
 	render() {
